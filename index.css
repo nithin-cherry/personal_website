@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #000000, #111111);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.pic {
+    width: 220px;       
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid #00bfff;
+    margin: 0 auto 30px;  
+    display: block;       
+    object-fit: cover;   
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #00bfff;
+    margin-bottom: 50px; 
+}
+
+h2 {
+    color: #00bfff;
+    margin: 50px 0 25px; 
+    font-size: 1.5rem;
+}
+
+p, .links ul {
+    max-width: 500px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.links li {
+    margin: 20px 0;
+}
+
+.links a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #00bfff;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.input {
+    flex: 1;
+    padding: 15px;
+    background: #222;
+    border: 1px solid #00bfff;
+    color: white;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 15px 25px;
+    background: #00bfff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .contact-form { flex-direction: column; }
+    .pic { 
+        width: 160px; 
+        height: 160px; 
+    }
+}
+
